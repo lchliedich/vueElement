@@ -1,0 +1,35 @@
+/*
+Write your variables here. All available variables can be
+found in element-ui/packages/theme-chalk/src/common/var.scss.
+For example, to overwrite the theme color:
+*/
+
+
+
+
+
+// $--color-primary: teal;
+
+/* icon font path, required */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "./assets/style/index.scss";
+
+@import "~element-ui/packages/theme-chalk/src/index";
+
+.el-menu{
+    background:$blue;
+    .el-submenu__title,.el-menu-item{
+        color: #fff;
+    }
+    
+}
+.el-menu-item:hover, .el-menu-item:focus,.el-submenu__title:hover,.el-menu-item:focus{
+    background:#2d9a57;
+}
+.el-menu--collapse {
+    span{
+
+        display: none;
+    }
+}
